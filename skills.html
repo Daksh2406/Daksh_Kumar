@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>My Skills · Daksh Kumar</title>
+  <meta name="description" content="Skills and tools Daksh Kumar is actively developing — web development, AI, digital marketing, and business.">
+  <meta name="author" content="Daksh Kumar">
+  <meta name="theme-color" content="#07090d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="My Skills · Daksh Kumar">
+  <meta property="og:description" content="Skills, tools, and topics I'm actively studying — honest progress, not expert claims.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="me.jpeg">
+  <meta property="og:url" content="https://dakshkumar.example/skill.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="My Skills · Daksh Kumar">
+  <meta name="twitter:description" content="Skills, tools, and topics I'm actively studying.">
+  <meta name="twitter:image" content="me.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300e0ff'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav-header" id="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="nav-logo" aria-label="Daksh Kumar — Home">DK</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="home.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="skill.html" class="nav-link active" data-i18n="nav.skills">Skills</a>
+        <a href="learning.html" class="nav-link" data-i18n="nav.learning">Learning</a>
+        <a href="project.html" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="journey.html" class="nav-link" data-i18n="nav.journey">Journey</a>
+        <a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="hi" aria-label="हिन्दी">हि</button>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HERO — 3D CUBE STACK
+         ========================================================== -->
+    <section class="hero hero-page" id="skill-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <p class="hero-greeting"
+             data-i18n-en="Chapter 02"
+             data-i18n-hi="अध्याय 02">Chapter 02</p>
+
+          <h1 class="hero-name">
+            <span class="name-line"
+                  data-i18n-en="MY"
+                  data-i18n-hi="मेरी">MY</span>
+            <span class="name-line"
+                  data-i18n-en="SKILLS"
+                  data-i18n-hi="स्किल्स">SKILLS</span>
+          </h1>
+
+          <p class="hero-tagline"
+             data-i18n-en="Tools, topics, and technologies I'm actively building."
+             data-i18n-hi="टूल्स, टॉपिक्स और technologies जो मैं सक्रिय रूप से सीख रहा हूँ।">
+            Tools, topics, and technologies I'm actively building.
+          </p>
+
+          <p class="hero-intro"
+             data-i18n-en="Not expert claims — honest progress. These are the skills I'm developing right now, and where I stand with each one."
+             data-i18n-hi="Expert होने का दावा नहीं — ईमानदार प्रगति। ये वो स्किल्स हैं जो मैं अभी विकसित कर रहा हूँ, और हर एक में मैं कहाँ हूँ।">
+            Not expert claims — honest progress. These are the skills I'm
+            developing right now, and where I stand with each one.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#skill-list" class="btn btn-primary"
+               data-i18n="btn.seeAllSkills">See All Skills</a>
+            <a href="learning.html" class="btn btn-outline"
+               data-i18n="nav.learning">Learning</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="scene-3d" aria-hidden="true">
+
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+
+            <div class="glow glow-cyan"></div>
+            <div class="glow glow-blue"></div>
+
+            <div class="cube-stack">
+              <div class="cube cube-top">
+                <span class="cube-label">AI</span>
+              </div>
+              <div class="cube cube-mid">
+                <span class="cube-label">&lt;/&gt;</span>
+              </div>
+              <div class="cube cube-base">
+                <span class="cube-label">JS</span>
+              </div>
+            </div>
+
+            <span class="particle particle-1"></span>
+            <span class="particle particle-2"></span>
+            <span class="particle particle-3"></span>
+            <span class="particle particle-4"></span>
+            <span class="particle particle-5"></span>
+            <span class="particle particle-6"></span>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         SKILL LIST
+         ========================================================== -->
+    <section class="section" id="skill-list">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="Core Skills"
+            data-i18n-hi="मुख्य स्किल्स">Core Skills</h2>
+
+        <p class="section-lead reveal"
+           data-i18n-en="Each card below is something I'm actively working on — no fake proficiency bars, just real focus areas and where I currently stand."
+           data-i18n-hi="नीचे दिया हर card वो है जिस पर मैं सक्रिय रूप से काम कर रहा हूँ — कोई नकली proficiency bar नहीं, बस असली focus areas और मैं अभी कहाँ हूँ।">
+          Each card below is something I'm actively working on — no fake
+          proficiency bars, just real focus areas and where I currently stand.
+        </p>
+
+        <div class="skills-grid">
+
+          <!-- Skill 1 -->
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="HTML, CSS &amp; JavaScript"
+                data-i18n-hi="HTML, CSS और JavaScript">
+              HTML, CSS &amp; JavaScript
+            </h3>
+            <p data-i18n-en="Building responsive, interactive web pages from scratch. Learning the fundamentals deeply."
+               data-i18n-hi="शुरुआत से responsive, interactive web pages बनाना। Fundamentals गहराई से सीख रहा हूँ।">
+              Building responsive, interactive web pages from scratch.
+              Learning the fundamentals deeply.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Developing"
+                  data-i18n-hi="विकसित हो रहा">Developing</span>
+          </article>
+
+          <!-- Skill 2 -->
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="Website Development"
+                data-i18n-hi="Website Development">
+              Website Development
+            </h3>
+            <p data-i18n-en="Exploring full website creation — layout, styling, and making things work end-to-end."
+               data-i18n-hi="पूरी website बनाना — layout, styling, और end-to-end चीज़ें काम करवाना।">
+              Exploring full website creation — layout, styling, and making
+              things work end-to-end.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Learning"
+                  data-i18n-hi="सीख रहा">Learning</span>
+          </article>
+
+          <!-- Skill 3 -->
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="AI Tools &amp; Concepts"
+                data-i18n-hi="AI Tools और Concepts">
+              AI Tools &amp; Concepts
+            </h3>
+            <p data-i18n-en="Understanding how AI works and using tools like ChatGPT, Copilot, and APIs to build smarter solutions."
+               data-i18n-hi="AI कैसे काम करता है, ये समझना और ChatGPT, Copilot, APIs जैसे tools से smarter solutions बनाना।">
+              Understanding how AI works and using tools like ChatGPT,
+              Copilot, and APIs to build smarter solutions.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Exploring"
+                  data-i18n-hi="खोज रहा">Exploring</span>
+          </article>
+
+          <!-- Skill 4 -->
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="Digital Marketing &amp; Growth"
+                data-i18n-hi="Digital Marketing और Growth">
+              Digital Marketing &amp; Growth
+            </h3>
+            <p data-i18n-en="Learning SEO, social media, and online growth strategies through D.G. EXPART."
+               data-i18n-hi="D.G. EXPART के ज़रिए SEO, social media और online growth strategies सीखना।">
+              Learning SEO, social media, and online growth strategies through
+              D.G. EXPART.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Practicing"
+                  data-i18n-hi="अभ्यास कर रहा">Practicing</span>
+          </article>
+
+          <!-- Skill 5 -->
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="Business Development"
+                data-i18n-hi="Business Development">
+              Business Development
+            </h3>
+            <p data-i18n-en="Studying how businesses start, grow, and create value. Thinking about problems worth solving."
+               data-i18n-hi="Businesses कैसे शुरू होते हैं, बढ़ते हैं, और value बनाते हैं — ये पढ़ना। सोचना कि कौन से problems solve करने लायक हैं।">
+              Studying how businesses start, grow, and create value. Thinking
+              about problems worth solving.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Exploring"
+                  data-i18n-hi="खोज रहा">Exploring</span>
+          </article>
+
+          <!-- Skill 6 -->
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="Creative Problem-Solving"
+                data-i18n-hi="Creative Problem-Solving">
+              Creative Problem-Solving
+            </h3>
+            <p data-i18n-en="Turning vague ideas into working prototypes. Learning by breaking things and fixing them."
+               data-i18n-hi="अस्पष्ट ideas को काम करने वाले prototypes में बदलना। चीज़ें तोड़कर और ठीक करके सीखना।">
+              Turning vague ideas into working prototypes. Learning by breaking
+              things and fixing them.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Developing"
+                  data-i18n-hi="विकसित हो रहा">Developing</span>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         TOOLS I USE
+         ========================================================== -->
+    <section class="section section-alt" id="tools">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="Tools I Use"
+            data-i18n-hi="Tools जो मैं use करता हूँ">Tools I Use</h2>
+
+        <p class="section-lead reveal"
+           data-i18n-en="A simple list of tools and platforms I'm currently working with."
+           data-i18n-hi="कुछ simple tools और platforms जिनके साथ मैं अभी काम कर रहा हूँ।">
+          A simple list of tools and platforms I'm currently working with.
+        </p>
+
+        <div class="tools-grid reveal">
+
+          <div class="tool-chip">
+            <span class="tool-dot"></span>
+            <span class="tool-name">VS Code</span>
+          </div>
+          <div class="tool-chip">
+            <span class="tool-dot"></span>
+            <span class="tool-name">Git &amp; GitHub</span>
+          </div>
+          <div class="tool-chip">
+            <span class="tool-dot"></span>
+            <span class="tool-name">ChatGPT</span>
+          </div>
+          <div class="tool-chip">
+            <span class="tool-dot"></span>
+            <span class="tool-name">Copilot</span>
+          </div>
+          <div class="tool-chip">
+            <span class="tool-dot"></span>
+            <span class="tool-name">Figma</span>
+          </div>
+          <div class="tool-chip">
+            <span class="tool-dot"></span>
+            <span class="tool-name">Canva</span>
+          </div>
+          <div class="tool-chip">
+            <span class="tool-dot"></span>
+            <span class="tool-name">Google Analytics</span>
+          </div>
+          <div class="tool-chip">
+            <span class="tool-dot"></span>
+            <span class="tool-name">Notion</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         HOW I BUILD
+         ========================================================== -->
+    <section class="section" id="how-i-build">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="How I Build"
+            data-i18n-hi="मैं कैसे बनाता हूँ">How I Build</h2>
+
+        <div class="mindset-grid reveal">
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Start simple"
+                data-i18n-hi="Simple से शुरू करो">Start simple</h3>
+            <p data-i18n-en="Every project begins as the smallest version that could possibly work. Complexity comes later, if it's earned."
+               data-i18n-hi="हर project सबसे छोटे version से शुरू होता है जो शायद काम कर सके। Complexity बाद में आती है, अगर कमाई जाए।">
+              Every project begins as the smallest version that could possibly
+              work. Complexity comes later, if it's earned.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Ship, then improve"
+                data-i18n-hi="Ship करो, फिर सुधारो">Ship, then improve</h3>
+            <p data-i18n-en="An imperfect live project teaches more than a perfect idea that never leaves my notes."
+               data-i18n-hi="एक अपूर्ण live project उस perfect idea से ज़्यादा सिखाता है जो कभी notes से बाहर नहीं आता।">
+              An imperfect live project teaches more than a perfect idea that
+              never leaves my notes.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Solve something real"
+                data-i18n-hi="कुछ असली solve करो">Solve something real</h3>
+            <p data-i18n-en="If a project doesn't help someone — me included — it's a hobby, not a build. I try to know the difference."
+               data-i18n-hi="अगर कोई project किसी की — मेरी भी — मदद नहीं करता, तो वो hobby है, build नहीं। मैं फर्क समझने की कोशिश करता हूँ।">
+              If a project doesn't help someone — me included — it's a hobby,
+              not a build. I try to know the difference.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Document as I go"
+                data-i18n-hi="चलते-चलते document करो">Document as I go</h3>
+            <p data-i18n-en="I write down what I learn from each project. That writing becomes part of this website."
+               data-i18n-hi="मैं हर project से जो सीखता हूँ वो लिख लेता हूँ। वो लिखा हुआ इस website का हिस्सा बनता है।">
+              I write down what I learn from each project. That writing becomes
+              part of this website.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Learn the stack"
+                data-i18n-hi="Stack सीखो">Learn the stack</h3>
+            <p data-i18n-en="I pick tools because they teach me something, not just because they're popular."
+               data-i18n-hi="मैं tools इसलिए चुनता हूँ क्योंकि वो कुछ सिखाते हैं, सिर्फ popular होने की वजह से नहीं।">
+              I pick tools because they teach me something, not just because
+              they're popular.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Stay honest"
+                data-i18n-hi="ईमानदार रहो">Stay honest</h3>
+            <p data-i18n-en="Skill levels here mean what they say. 'Developing' means developing — not 'expert in disguise.'"
+               data-i18n-hi="यहाँ skill levels वही मतलब रखते हैं जो लिखा है। 'Developing' का मतलब developing — 'छिपा हुआ expert' नहीं।">
+              Skill levels here mean what they say. 'Developing' means
+              developing — not 'expert in disguise.'
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CLOSING CTA
+         ========================================================== -->
+    <section class="section section-alt closing" id="closing">
+      <div class="container">
+
+        <p class="closing-line reveal"
+           data-i18n-en="Skills are not trophies. They're tools I'm sharpening every day."
+           data-i18n-hi="Skills trophies नहीं हैं। ये tools हैं जिन्हें मैं रोज़ तेज़ कर रहा हूँ।">
+          Skills are not trophies.<br>
+          They're tools I'm sharpening every day.
+        </p>
+
+        <div class="center-cta reveal">
+          <a href="learning.html" class="btn btn-primary"
+             data-i18n="nav.learning">Learning</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Daksh Kumar · Meerut, India</p>
+      <p class="footer-note"
+         data-i18n-en="I am still building. My story is not finished yet."
+         data-i18n-hi="मैं अभी भी बना रहा हूँ। मेरी कहानी अभी खत्म नहीं हुई।">
+        I am still building. My story is not finished yet.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

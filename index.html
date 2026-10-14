@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Daksh Kumar · Building the Future</title>
+  <meta name="description" content="Daksh Kumar — aspiring entrepreneur, tech learner, and builder from Meerut, India. Documenting the journey of becoming.">
+  <meta name="author" content="Daksh Kumar">
+  <meta name="theme-color" content="#07090d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Daksh Kumar · Building the Future">
+  <meta property="og:description" content="Aspiring entrepreneur & tech learner. My story is not finished yet.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="me.jpeg">
+  <meta property="og:url" content="https://dakshkumar.example/home.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Daksh Kumar · Building the Future">
+  <meta name="twitter:description" content="Aspiring entrepreneur & tech learner. My story is not finished yet.">
+  <meta name="twitter:image" content="me.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300e0ff'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav-header" id="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="nav-logo" aria-label="Daksh Kumar — Home">DK</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="nav-link active" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="skills.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="aboutskill.html" class="nav-link" data-i18n="nav.learning">Learning</a>
+        <a href="projects.html" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="journey.html" class="nav-link" data-i18n="nav.journey">Journey</a>
+        <a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="hi" aria-label="हिन्दी">हि</button>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         HERO SECTION
+         ========================================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <p class="hero-greeting"
+             data-i18n-en="Hello, I'm"
+             data-i18n-hi="नमस्ते, मैं हूँ">Hello, I'm</p>
+
+          <h1 class="hero-name">
+            <span class="name-line">DAKSH</span>
+            <span class="name-line">KUMAR</span>
+          </h1>
+
+          <p class="hero-tagline"
+             data-i18n-en="Building the future, one line of code at a time."
+             data-i18n-hi="भविष्य बना रहा हूँ, एक-एक लाइन कोड से।">
+            Building the future, one line of code at a time.
+          </p>
+
+          <p class="hero-intro"
+             data-i18n-en="Aspiring entrepreneur & tech learner from Meerut, India. I'm not there yet — I'm documenting the journey."
+             data-i18n-hi="मेरठ, भारत से एक महत्वाकांक्षी उद्यमी और टेक लर्नर। मैं अभी वहाँ नहीं पहुँचा — मैं सफ़र document कर रहा हूँ।">
+            Aspiring entrepreneur &amp; tech learner from Meerut, India.
+            I'm not there yet — I'm documenting the journey.
+          </p>
+
+          <div class="hero-actions">
+            <a href="about.html" class="btn btn-primary" data-i18n="btn.exploreStory">Explore My Story</a>
+            <a href="journey.html" class="btn btn-outline" data-i18n="btn.myJourney">My Journey</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="scene-3d" aria-hidden="true">
+
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+
+            <div class="glow glow-cyan"></div>
+            <div class="glow glow-blue"></div>
+
+            <div class="card-3d">
+              <div class="card-3d-inner">
+                <div class="card-face card-front">
+                  <img src="me.jpeg"
+                       alt="Portrait of Daksh Kumar"
+                       class="profile-img"
+                       loading="eager"
+                       decoding="async"
+                       width="420"
+                       height="520">
+                  <div class="card-overlay"></div>
+                </div>
+              </div>
+            </div>
+
+            <span class="particle particle-1"></span>
+            <span class="particle particle-2"></span>
+            <span class="particle particle-3"></span>
+            <span class="particle particle-4"></span>
+            <span class="particle particle-5"></span>
+            <span class="particle particle-6"></span>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         ABOUT PREVIEW
+         ========================================================== -->
+    <section class="section" id="about-preview">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="About Me"
+            data-i18n-hi="मेरे बारे में">About Me</h2>
+
+        <div class="about-grid">
+
+          <div class="about-text reveal">
+            <p class="about-lead"
+               data-i18n-en="I'm a young person from Meerut, Uttar Pradesh, figuring things out by building."
+               data-i18n-hi="मैं मेरठ, उत्तर प्रदेश से एक युवा हूँ, बनाकर चीज़ें समझ रहा हूँ।">
+              I'm a young person from Meerut, Uttar Pradesh, figuring things out by building.
+            </p>
+
+            <p data-i18n-en="I'm not a guru or a millionaire. I'm someone who got curious about how the digital world works — websites, AI, business — and decided to learn by doing."
+               data-i18n-hi="मैं कोई गुरु या करोड़पति नहीं हूँ। मैं वो हूँ जिसे digital दुनिया — websites, AI, business — के बारे में जानने की उत्सुकता हुई और करके सीखने का फैसला किया।">
+              I'm not a guru or a millionaire. I'm someone who got curious
+              about how the digital world works — websites, AI, business —
+              and decided to learn by doing.
+            </p>
+
+            <p data-i18n-en="I value practical learning over perfect plans. I believe consistency beats talent, and that independent thinking is a superpower."
+               data-i18n-hi="मैं perfect plans से ज़्यादा practical सीखने को importance देता हूँ। मेरा मानना है consistency talent से बड़ी है, और independent सोच एक superpower है।">
+              I value practical learning over perfect plans. I believe
+              consistency beats talent, and that independent thinking is
+              a superpower.
+            </p>
+
+            <a href="about.html" class="btn btn-outline about-btn"
+               data-i18n="btn.readFullStory">Read Full Story →</a>
+          </div>
+
+          <aside class="about-stats reveal" aria-label="Quick facts">
+            <div class="stat-item">
+              <span class="stat-number">∞</span>
+              <span class="stat-label"
+                    data-i18n-en="Curiosity"
+                    data-i18n-hi="जिज्ञासा">Curiosity</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">1</span>
+              <span class="stat-label"
+                    data-i18n-en="Step at a time"
+                    data-i18n-hi="एक कदम एक बार">Step at a time</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label"
+                    data-i18n-en="Authentic"
+                    data-i18n-hi="सच्चा">Authentic</span>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         EXPLORE JOURNEY
+         ========================================================== -->
+    <section class="section section-alt" id="explore">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="Explore the Journey"
+            data-i18n-hi="सफ़र को explore करें">Explore the Journey</h2>
+
+        <div class="quick-links reveal">
+
+          <a href="skill.html" class="quick-card">
+            <h3 data-i18n-en="My Skills"
+                data-i18n-hi="मेरी स्किल्स">My Skills</h3>
+            <p data-i18n-en="Skills, tools, and topics I'm actively studying."
+               data-i18n-hi="स्किल्स, टूल्स और टॉपिक्स जो मैं सीख रहा हूँ।">
+              Skills, tools, and topics I'm actively studying.
+            </p>
+            <span class="quick-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="project.html" class="quick-card">
+            <h3 data-i18n-en="My Projects"
+                data-i18n-hi="मेरे प्रोजेक्ट्स">My Projects</h3>
+            <p data-i18n-en="Things I'm building — from D.G. EXPART to experiments."
+               data-i18n-hi="जो चीज़ें मैं बना रहा हूँ — D.G. EXPART से experiments तक।">
+              Things I'm building — from D.G. EXPART to experiments.
+            </p>
+            <span class="quick-arrow" aria-hidden="true">→</span>
+          </a>
+
+          <a href="journey.html" class="quick-card">
+            <h3 data-i18n-en="My Journey"
+                data-i18n-hi="मेरा सफ़र">My Journey</h3>
+            <p data-i18n-en="Milestones, timeline, and personal notes."
+               data-i18n-hi="माइलस्टोन्स, टाइमलाइन और personal notes।">
+              Milestones, timeline, and personal notes.
+            </p>
+            <span class="quick-arrow" aria-hidden="true">→</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CLOSING MESSAGE
+         ========================================================== -->
+    <section class="section closing" id="closing">
+      <div class="container">
+
+        <p class="closing-line reveal"
+           data-i18n-en="I am not pretending to have made it. I am documenting the journey of becoming."
+           data-i18n-hi="मैं दिखावा नहीं कर रहा कि मैं पहुँच गया हूँ। मैं बनने का सफ़र document कर रहा हूँ।">
+          I am not pretending to have made it.<br>
+          I am documenting the journey of becoming.
+        </p>
+
+        <div class="center-cta reveal">
+          <a href="contact.html" class="btn btn-primary"
+             data-i18n="btn.getInTouch">Get in Touch</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Daksh Kumar · Meerut, India</p>
+      <p class="footer-note"
+         data-i18n-en="I am still building. My story is not finished yet."
+         data-i18n-hi="मैं अभी भी बना रहा हूँ। मेरी कहानी अभी खत्म नहीं हुई।">
+        I am still building. My story is not finished yet.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

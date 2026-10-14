@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>My Story · Daksh Kumar</title>
+  <meta name="description" content="The story of Daksh Kumar — an aspiring entrepreneur from Meerut documenting the journey of becoming.">
+  <meta name="author" content="Daksh Kumar">
+  <meta name="theme-color" content="#0a0c10">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="My Story · Daksh Kumar">
+  <meta property="og:description" content="Where I am, how I got here, and what I'm building toward.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="me.jpeg">
+  <meta property="og:url" content="https://dakshkumar.example/story.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="My Story · Daksh Kumar">
+  <meta name="twitter:description" content="Where I am, how I got here, and what I'm building toward.">
+  <meta name="twitter:image" content="me.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300e0ff'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav-header" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Daksh Kumar — Home">DK</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="story.html" class="nav-link active">Story</a>
+        <a href="skills.html" class="nav-link">Learning</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="journey.html" class="nav-link">Journey</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HERO — STORY 3D SCENE
+         ========================================================== -->
+    <section class="hero hero-page" id="story-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-content">
+
+        <!-- Hero Text -->
+        <div class="hero-text">
+          <p class="hero-greeting">Chapter 01</p>
+          <h1 class="hero-name">
+            <span class="name-line">MY</span>
+            <span class="name-line">STORY</span>
+          </h1>
+          <p class="hero-tagline">
+            Where I am, how I got here, and what I'm building toward.
+          </p>
+          <p class="hero-intro">
+            No fake achievements. No invented struggles. Just an honest look at
+            the beginning of a long journey — written as it happens.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#story-full" class="btn btn-primary">Read My Story</a>
+            <a href="#vision" class="btn btn-outline">See My Vision</a>
+          </div>
+        </div>
+
+        <!-- Hero 3D Visual — Open Book / Pages -->
+        <div class="hero-visual">
+          <div class="scene-3d" aria-hidden="true">
+
+            <!-- Orbital rings -->
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+
+            <!-- Glow layers -->
+            <div class="glow glow-cyan"></div>
+            <div class="glow glow-blue"></div>
+
+            <!-- Floating book / pages -->
+            <div class="book-3d">
+              <div class="book-page page-left"></div>
+              <div class="book-page page-right"></div>
+              <div class="book-spine"></div>
+              <div class="book-glow"></div>
+            </div>
+
+            <!-- Floating particles -->
+            <span class="particle particle-1"></span>
+            <span class="particle particle-2"></span>
+            <span class="particle particle-3"></span>
+            <span class="particle particle-4"></span>
+            <span class="particle particle-5"></span>
+            <span class="particle particle-6"></span>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         FULL STORY
+         ========================================================== -->
+    <section class="section" id="story-full">
+      <div class="container">
+
+        <h2 class="section-title reveal">
+          The <span class="accent">Beginning</span>
+        </h2>
+
+        <div class="story-content reveal">
+
+          <div class="story-block">
+            <h3>Where I am today</h3>
+            <p>
+              I'm at the beginning. No funding, no team, no finished product —
+              just a laptop, an internet connection, and a stubborn willingness
+              to learn. I spend my days experimenting with code, reading about
+              business, and trying to understand how technology can solve real
+              problems.
+            </p>
+          </div>
+
+          <div class="story-block">
+            <h3>Why tech &amp; entrepreneurship</h3>
+            <p>
+              Technology feels like magic you can actually learn. Entrepreneurship
+              is the art of turning that magic into something useful. I'm drawn
+              to both because they let me create, iterate, and grow on my own
+              terms.
+            </p>
+          </div>
+
+          <div class="story-block">
+            <h3>The challenge</h3>
+            <p>
+              Starting with limited resources isn't easy. There's no roadmap,
+              no safety net, and plenty of noise. But I've realised that
+              constraints force creativity. Every small win — a working button,
+              a clear concept — feels earned.
+            </p>
+          </div>
+
+          <div class="story-block">
+            <h3>What I'm building toward</h3>
+            <p>
+              I'm not trying to build a unicorn overnight. I'm trying to build
+              skills, a mindset, and a body of work that compounds over time.
+              The goal is simple: become capable enough to create opportunities —
+              for myself and maybe for others.
+            </p>
+          </div>
+
+          <p class="placeholder-note">
+            [ADD YOUR STORY] — replace these paragraphs with your own journey.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         PRINCIPLES / VALUES
+         ========================================================== -->
+    <section class="section section-alt" id="values">
+      <div class="container">
+
+        <h2 class="section-title reveal">
+          What I <span class="accent">Value</span>
+        </h2>
+
+        <div class="mindset-grid reveal">
+
+          <div class="mindset-card">
+            <h3>Practical learning</h3>
+            <p>
+              I'd rather build something imperfect than plan something perfect.
+              Doing teaches faster than thinking.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Consistency</h3>
+            <p>
+              Small daily steps beat rare bursts of motivation. Showing up is
+              the real skill.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Independent thinking</h3>
+            <p>
+              I try to form my own opinions instead of repeating what everyone
+              else says.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Creativity</h3>
+            <p>
+              Constraints force better ideas. I look for simple solutions to
+              real problems.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Honesty</h3>
+            <p>
+              I don't pretend to be further along than I am. This site is
+              proof of that.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Patience</h3>
+            <p>
+              Real growth takes time. I'm learning to enjoy the process, not
+              just the outcome.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         MINDSET
+         ========================================================== -->
+    <section class="section" id="mindset">
+      <div class="container">
+
+        <h2 class="section-title reveal">
+          My <span class="accent">Mindset</span>
+        </h2>
+
+        <div class="mindset-grid reveal">
+
+          <div class="mindset-card">
+            <h3>Keep learning</h3>
+            <p>
+              Every day is a chance to know a little more than yesterday.
+              I'd rather be a student forever than pretend to know it all.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Take action</h3>
+            <p>
+              Planning is useful, but doing is what moves the needle. I try to
+              ship imperfect things rather than dream perfect ones.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Learn from mistakes</h3>
+            <p>
+              Errors are data. I've stopped fearing them and started treating
+              them as feedback loops.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Build useful things</h3>
+            <p>
+              I want to create things that solve real problems — even small
+              ones. Usefulness is the ultimate metric.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Stay curious</h3>
+            <p>
+              Curiosity has taken me further than any tutorial. I follow
+              questions, not just answers.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3>Long-term progress</h3>
+            <p>
+              I'm playing a long game. Small, consistent steps beat sporadic
+              bursts of motivation.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         VISION
+         ========================================================== -->
+    <section class="section section-alt" id="vision">
+      <div class="container">
+
+        <h2 class="section-title reveal">
+          My <span class="accent">Vision</span>
+        </h2>
+
+        <div class="vision-content reveal">
+
+          <p class="vision-lead">
+            These are goals, not guarantees. But writing them down makes them real.
+          </p>
+
+          <ul class="vision-list">
+            <li>Become a capable entrepreneur who builds with both empathy and logic.</li>
+            <li>Develop strong technical skills in web development and AI.</li>
+            <li>Create digital products and businesses that are genuinely useful.</li>
+            <li>Use practical knowledge to create opportunities for myself and others.</li>
+            <li>Grow through real-world experience, not just theory.</li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CLOSING CTA
+         ========================================================== -->
+    <section class="section closing" id="closing">
+      <div class="container">
+        <p class="closing-line reveal">
+          "This is not the end of my story.<br>
+          It's barely the first page."
+        </p>
+        <div class="center-cta reveal">
+          <a href="journey.html" class="btn btn-primary">See My Journey</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Daksh Kumar · Meerut, India</p>
+      <p class="footer-note">I am still building. My story is not finished yet.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

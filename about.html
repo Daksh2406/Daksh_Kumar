@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>About Me · Daksh Kumar</title>
+  <meta name="description" content="The story of Daksh Kumar — an aspiring entrepreneur from Meerut documenting the journey of becoming.">
+  <meta name="author" content="Daksh Kumar">
+  <meta name="theme-color" content="#07090d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Me · Daksh Kumar">
+  <meta property="og:description" content="Where I am, how I got here, and what I'm building toward.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="me.jpeg">
+  <meta property="og:url" content="https://dakshkumar.example/about.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Me · Daksh Kumar">
+  <meta name="twitter:description" content="Where I am, how I got here, and what I'm building toward.">
+  <meta name="twitter:image" content="me.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300e0ff'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav-header" id="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="nav-logo" aria-label="Daksh Kumar — Home">DK</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="home.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="nav-link active" data-i18n="nav.about">About</a>
+        <a href="skill.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="learning.html" class="nav-link" data-i18n="nav.learning">Learning</a>
+        <a href="project.html" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="journey.html" class="nav-link" data-i18n="nav.journey">Journey</a>
+        <a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="hi" aria-label="हिन्दी">हि</button>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HERO
+         ========================================================== -->
+    <section class="hero hero-page" id="about-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <p class="hero-greeting"
+             data-i18n-en="Chapter 01"
+             data-i18n-hi="अध्याय 01">Chapter 01</p>
+
+          <h1 class="hero-name">
+            <span class="name-line"
+                  data-i18n-en="ABOUT"
+                  data-i18n-hi="मेरे बारे">ABOUT</span>
+            <span class="name-line"
+                  data-i18n-en="ME"
+                  data-i18n-hi="में">ME</span>
+          </h1>
+
+          <p class="hero-tagline"
+             data-i18n-en="Where I am, how I got here, and what I'm building toward."
+             data-i18n-hi="मैं कहाँ हूँ, यहाँ कैसे पहुँचा, और क्या बना रहा हूँ।">
+            Where I am, how I got here, and what I'm building toward.
+          </p>
+
+          <p class="hero-intro"
+             data-i18n-en="No fake achievements. No invented struggles. Just an honest look at the beginning of a long journey — written as it happens."
+             data-i18n-hi="कोई नकली उपलब्धि नहीं। कोई बनाई हुई कहानी नहीं। बस एक लंबे सफ़र की ईमानदार शुरुआत — जैसे ये हो रहा है, वैसे लिखा हुआ।">
+            No fake achievements. No invented struggles. Just an honest look
+            at the beginning of a long journey — written as it happens.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#story" class="btn btn-primary"
+               data-i18n="btn.readMyStory">Read My Story</a>
+            <a href="journey.html" class="btn btn-outline"
+               data-i18n="btn.myJourney">My Journey</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="scene-3d" aria-hidden="true">
+
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+
+            <div class="glow glow-cyan"></div>
+            <div class="glow glow-blue"></div>
+
+            <div class="card-3d">
+              <div class="card-3d-inner">
+                <div class="card-face card-front">
+                  <img src="me.jpeg"
+                       alt="Portrait of Daksh Kumar"
+                       class="profile-img"
+                       loading="eager"
+                       decoding="async"
+                       width="420"
+                       height="520">
+                  <div class="card-overlay"></div>
+                </div>
+              </div>
+            </div>
+
+            <span class="particle particle-1"></span>
+            <span class="particle particle-2"></span>
+            <span class="particle particle-3"></span>
+            <span class="particle particle-4"></span>
+            <span class="particle particle-5"></span>
+            <span class="particle particle-6"></span>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         MY STORY
+         ========================================================== -->
+    <section class="section" id="story">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="My Story"
+            data-i18n-hi="मेरी कहानी">My Story</h2>
+
+        <div class="story-content reveal">
+
+          <div class="story-block">
+            <h3 data-i18n-en="Where I am today"
+                data-i18n-hi="आज मैं कहाँ हूँ">Where I am today</h3>
+            <p data-i18n-en="I'm at the beginning. No funding, no team, no finished product — just a laptop, an internet connection, and a stubborn willingness to learn. I spend my days experimenting with code, reading about business, and trying to understand how technology can solve real problems."
+               data-i18n-hi="मैं शुरुआत में हूँ। कोई funding नहीं, कोई team नहीं, कोई तैयार product नहीं — बस एक laptop, एक internet connection, और सीखने की ज़िद। मैं अपने दिन code के साथ experiment करने, business के बारे में पढ़ने, और ये समझने में बिताता हूँ कि technology असली problems कैसे solve कर सकती है।">
+              I'm at the beginning. No funding, no team, no finished product —
+              just a laptop, an internet connection, and a stubborn willingness
+              to learn. I spend my days experimenting with code, reading about
+              business, and trying to understand how technology can solve real
+              problems.
+            </p>
+          </div>
+
+          <div class="story-block">
+            <h3 data-i18n-en="Why tech & entrepreneurship"
+                data-i18n-hi="क्यों tech और entrepreneurship">Why tech &amp; entrepreneurship</h3>
+            <p data-i18n-en="Technology feels like magic you can actually learn. Entrepreneurship is the art of turning that magic into something useful. I'm drawn to both because they let me create, iterate, and grow on my own terms."
+               data-i18n-hi="Technology एक ऐसा जादू है जिसे सच में सीखा जा सकता है। Entrepreneurship उस जादू को कुछ उपयोगी बनाने की कला है। मैं दोनों की तरफ खिंचता हूँ क्योंकि ये मुझे अपनी शर्तों पर बनाने, सुधारने और बढ़ने देते हैं।">
+              Technology feels like magic you can actually learn.
+              Entrepreneurship is the art of turning that magic into something
+              useful. I'm drawn to both because they let me create, iterate,
+              and grow on my own terms.
+            </p>
+          </div>
+
+          <div class="story-block">
+            <h3 data-i18n-en="The challenge"
+                data-i18n-hi="चुनौती">The challenge</h3>
+            <p data-i18n-en="Starting with limited resources isn't easy. There's no roadmap, no safety net, and plenty of noise. But I've realised that constraints force creativity. Every small win — a working button, a clear concept — feels earned."
+               data-i18n-hi="कम resources से शुरुआत करना आसान नहीं है। न कोई roadmap, न कोई safety net, और बहुत शोर। लेकिन मैंने महसूस किया है कि constraints creativity को मजबूर करते हैं। हर छोटी जीत — एक चलता हुआ button, एक साफ़ concept — कमाई हुई लगती है।">
+              Starting with limited resources isn't easy. There's no roadmap,
+              no safety net, and plenty of noise. But I've realised that
+              constraints force creativity. Every small win — a working button,
+              a clear concept — feels earned.
+            </p>
+          </div>
+
+          <div class="story-block">
+            <h3 data-i18n-en="What I'm building toward"
+                data-i18n-hi="मैं क्या बना रहा हूँ">What I'm building toward</h3>
+            <p data-i18n-en="I'm not trying to build a unicorn overnight. I'm trying to build skills, a mindset, and a body of work that compounds over time. The goal is simple: become capable enough to create opportunities — for myself and maybe for others."
+               data-i18n-hi="मैं रातों-रात unicorn बनाने की कोशिश नहीं कर रहा। मैं skills, mindset, और ऐसा काम बना रहा हूँ जो समय के साथ बढ़ता है। लक्ष्य सीधा है: इतना capable बनना कि अपने लिए — और शायद दूसरों के लिए भी — opportunities बना सकूँ।">
+              I'm not trying to build a unicorn overnight. I'm trying to build
+              skills, a mindset, and a body of work that compounds over time.
+              The goal is simple: become capable enough to create opportunities
+              — for myself and maybe for others.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         WHAT I VALUE
+         ========================================================== -->
+    <section class="section section-alt" id="values">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="What I Value"
+            data-i18n-hi="मैं क्या महत्व देता हूँ">What I Value</h2>
+
+        <div class="mindset-grid reveal">
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Practical learning"
+                data-i18n-hi="Practical सीखना">Practical learning</h3>
+            <p data-i18n-en="I'd rather build something imperfect than plan something perfect. Doing teaches faster than thinking."
+               data-i18n-hi="मैं perfect plan बनाने से बेहतर एक अपूर्ण चीज़ बनाना पसंद करूँगा। करना सोचने से जल्दी सिखाता है।">
+              I'd rather build something imperfect than plan something perfect.
+              Doing teaches faster than thinking.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Consistency"
+                data-i18n-hi="Consistency">Consistency</h3>
+            <p data-i18n-en="Small daily steps beat rare bursts of motivation. Showing up is the real skill."
+               data-i18n-hi="रोज़ के छोटे कदम motivation के बड़े-बड़े bursts से बेहतर हैं। रोज़ आना ही असली skill है।">
+              Small daily steps beat rare bursts of motivation. Showing up is
+              the real skill.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Independent thinking"
+                data-i18n-hi="Independent सोच">Independent thinking</h3>
+            <p data-i18n-en="I try to form my own opinions instead of repeating what everyone else says."
+               data-i18n-hi="मैं अपनी राय बनाने की कोशिश करता हूँ, बजाय वही दोहराने के जो सब कहते हैं।">
+              I try to form my own opinions instead of repeating what everyone
+              else says.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Creativity"
+                data-i18n-hi="Creativity">Creativity</h3>
+            <p data-i18n-en="Constraints force better ideas. I look for simple solutions to real problems."
+               data-i18n-hi="Constraints बेहतर ideas को मजबूर करते हैं। मैं असली problems के लिए सरल solutions ढूँढता हूँ।">
+              Constraints force better ideas. I look for simple solutions to
+              real problems.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Honesty"
+                data-i18n-hi="ईमानदारी">Honesty</h3>
+            <p data-i18n-en="I don't pretend to be further along than I am. This site is proof of that."
+               data-i18n-hi="मैं दिखावा नहीं करता कि मैं जितना हूँ उससे आगे हूँ। ये website इसका सबूत है।">
+              I don't pretend to be further along than I am. This site is proof
+              of that.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Patience"
+                data-i18n-hi="धैर्य">Patience</h3>
+            <p data-i18n-en="Real growth takes time. I'm learning to enjoy the process, not just the outcome."
+               data-i18n-hi="असली growth में समय लगता है। मैं process का आनंद लेना सीख रहा हूँ, सिर्फ नतीजे का नहीं।">
+              Real growth takes time. I'm learning to enjoy the process, not
+              just the outcome.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         MY MINDSET
+         ========================================================== -->
+    <section class="section" id="mindset">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="My Mindset"
+            data-i18n-hi="मेरी सोच">My Mindset</h2>
+
+        <div class="mindset-grid reveal">
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Keep learning"
+                data-i18n-hi="सीखते रहो">Keep learning</h3>
+            <p data-i18n-en="Every day is a chance to know a little more than yesterday. I'd rather be a student forever than pretend to know it all."
+               data-i18n-hi="हर दिन कल से थोड़ा ज़्यादा जानने का मौका है। मैं हमेशा student बने रहना पसंद करूँगा, बजाय सब जानने का दिखावा करने के।">
+              Every day is a chance to know a little more than yesterday. I'd
+              rather be a student forever than pretend to know it all.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Take action"
+                data-i18n-hi="Action लो">Take action</h3>
+            <p data-i18n-en="Planning is useful, but doing is what moves the needle. I try to ship imperfect things rather than dream perfect ones."
+               data-i18n-hi="Planning उपयोगी है, लेकिन करना ही असली फर्क लाता है। मैं perfect सपने देखने से बेहतर अपूर्ण चीज़ें ship करता हूँ।">
+              Planning is useful, but doing is what moves the needle. I try to
+              ship imperfect things rather than dream perfect ones.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Learn from mistakes"
+                data-i18n-hi="गलतियों से सीखो">Learn from mistakes</h3>
+            <p data-i18n-en="Errors are data. I've stopped fearing them and started treating them as feedback loops."
+               data-i18n-hi="गलतियाँ data हैं। मैंने उनसे डरना बंद कर दिया है और उन्हें feedback loops की तरह देखना शुरू किया है।">
+              Errors are data. I've stopped fearing them and started treating
+              them as feedback loops.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Build useful things"
+                data-i18n-hi="उपयोगी चीज़ें बनाओ">Build useful things</h3>
+            <p data-i18n-en="I want to create things that solve real problems — even small ones. Usefulness is the ultimate metric."
+               data-i18n-hi="मैं ऐसी चीज़ें बनाना चाहता हूँ जो असली problems solve करें — छोटी ही सही। Usefulness ही असली पैमाना है।">
+              I want to create things that solve real problems — even small
+              ones. Usefulness is the ultimate metric.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Stay curious"
+                data-i18n-hi="जिज्ञासु रहो">Stay curious</h3>
+            <p data-i18n-en="Curiosity has taken me further than any tutorial. I follow questions, not just answers."
+               data-i18n-hi="जिज्ञासा ने मुझे किसी भी tutorial से आगे पहुँचाया है। मैं सिर्फ जवाब नहीं, सवालों का पीछा करता हूँ।">
+              Curiosity has taken me further than any tutorial. I follow
+              questions, not just answers.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Long-term progress"
+                data-i18n-hi="Long-term प्रगति">Long-term progress</h3>
+            <p data-i18n-en="I'm playing a long game. Small, consistent steps beat sporadic bursts of motivation."
+               data-i18n-hi="मैं लंबा खेल खेल रहा हूँ। छोटे, लगातार कदम motivation के अचानक bursts से बेहतर हैं।">
+              I'm playing a long game. Small, consistent steps beat sporadic
+              bursts of motivation.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         MY VISION
+         ========================================================== -->
+    <section class="section section-alt" id="vision">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="My Vision"
+            data-i18n-hi="मेरा विज़न">My Vision</h2>
+
+        <div class="vision-content reveal">
+
+          <p class="vision-lead"
+             data-i18n-en="These are goals, not guarantees. But writing them down makes them real."
+             data-i18n-hi="ये लक्ष्य हैं, guarantees नहीं। लेकिन लिखने से ये असली हो जाते हैं।">
+            These are goals, not guarantees. But writing them down makes them
+            real.
+          </p>
+
+          <ul class="vision-list">
+            <li data-i18n-en="Become a capable entrepreneur who builds with both empathy and logic."
+                data-i18n-hi="एक capable entrepreneur बनना जो empathy और logic दोनों से बनाए।">
+              Become a capable entrepreneur who builds with both empathy and
+              logic.
+            </li>
+            <li data-i18n-en="Develop strong technical skills in web development and AI."
+                data-i18n-hi="Web development और AI में मज़बूत technical skills विकसित करना।">
+              Develop strong technical skills in web development and AI.
+            </li>
+            <li data-i18n-en="Create digital products and businesses that are genuinely useful."
+                data-i18n-hi="ऐसे digital products और businesses बनाना जो सच में उपयोगी हों।">
+              Create digital products and businesses that are genuinely useful.
+            </li>
+            <li data-i18n-en="Use practical knowledge to create opportunities for myself and others."
+                data-i18n-hi="Practical knowledge से अपने और दूसरों के लिए opportunities बनाना।">
+              Use practical knowledge to create opportunities for myself and
+              others.
+            </li>
+            <li data-i18n-en="Grow through real-world experience, not just theory."
+                data-i18n-hi="सिर्फ theory से नहीं, असली दुनिया के experience से बढ़ना।">
+              Grow through real-world experience, not just theory.
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CLOSING CTA
+         ========================================================== -->
+    <section class="section closing" id="closing">
+      <div class="container">
+
+        <p class="closing-line reveal"
+           data-i18n-en="This is not the end of my story. It's barely the first page."
+           data-i18n-hi="ये मेरी कहानी का अंत नहीं है। ये तो बस पहला पन्ना है।">
+          This is not the end of my story.<br>
+          It's barely the first page.
+        </p>
+
+        <div class="center-cta reveal">
+          <a href="journey.html" class="btn btn-primary"
+             data-i18n="btn.myJourney">My Journey</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Daksh Kumar · Meerut, India</p>
+      <p class="footer-note"
+         data-i18n-en="I am still building. My story is not finished yet."
+         data-i18n-hi="मैं अभी भी बना रहा हूँ। मेरी कहानी अभी खत्म नहीं हुई।">
+        I am still building. My story is not finished yet.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

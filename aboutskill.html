@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>What I'm Learning · Daksh Kumar</title>
+  <meta name="description" content="Topics, tools, and skills Daksh Kumar is currently learning — AI, web development, digital marketing, and business.">
+  <meta name="author" content="Daksh Kumar">
+  <meta name="theme-color" content="#07090d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="What I'm Learning · Daksh Kumar">
+  <meta property="og:description" content="Topics, tools, and skills I'm actively studying right now.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="me.jpeg">
+  <meta property="og:url" content="https://dakshkumar.example/learning.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What I'm Learning · Daksh Kumar">
+  <meta name="twitter:description" content="Topics, tools, and skills I'm actively studying right now.">
+  <meta name="twitter:image" content="me.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300e0ff'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav-header" id="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="nav-logo" aria-label="Daksh Kumar — Home">DK</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="home.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="skill.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="learning.html" class="nav-link active" data-i18n="nav.learning">Learning</a>
+        <a href="project.html" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="journey.html" class="nav-link" data-i18n="nav.journey">Journey</a>
+        <a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="hi" aria-label="हिन्दी">हि</button>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HERO — 3D BOOK VISUAL
+         ========================================================== -->
+    <section class="hero hero-page" id="learning-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <p class="hero-greeting"
+             data-i18n-en="Chapter 03"
+             data-i18n-hi="अध्याय 03">Chapter 03</p>
+
+          <h1 class="hero-name">
+            <span class="name-line"
+                  data-i18n-en="WHAT I'M"
+                  data-i18n-hi="मैं क्या">WHAT I'M</span>
+            <span class="name-line"
+                  data-i18n-en="LEARNING"
+                  data-i18n-hi="सीख रहा हूँ">LEARNING</span>
+          </h1>
+
+          <p class="hero-tagline"
+             data-i18n-en="Topics, tools, and skills I'm actively studying right now."
+             data-i18n-hi="टॉपिक्स, tools और skills जो मैं अभी सीख रहा हूँ।">
+            Topics, tools, and skills I'm actively studying right now.
+          </p>
+
+          <p class="hero-intro"
+             data-i18n-en="Learning is not a phase for me — it's the way I build. Here's what's currently on my desk and in my head."
+             data-i18n-hi="सीखना मेरे लिए एक phase नहीं है — ये मेरा तरीका है बनाने का। ये है वो जो अभी मेरी मेज़ और दिमाग़ पर है।">
+            Learning is not a phase for me — it's the way I build. Here's what's
+            currently on my desk and in my head.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#current-topics" class="btn btn-primary"
+               data-i18n-en="See Current Topics"
+               data-i18n-hi="अभी के टॉपिक्स देखें">See Current Topics</a>
+            <a href="skill.html" class="btn btn-outline"
+               data-i18n="nav.skills">Skills</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="scene-3d" aria-hidden="true">
+
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+
+            <div class="glow glow-cyan"></div>
+            <div class="glow glow-blue"></div>
+
+            <div class="book-3d">
+              <div class="book-page page-left"></div>
+              <div class="book-page page-right"></div>
+              <div class="book-spine"></div>
+              <div class="book-glow"></div>
+            </div>
+
+            <span class="particle particle-1"></span>
+            <span class="particle particle-2"></span>
+            <span class="particle particle-3"></span>
+            <span class="particle particle-4"></span>
+            <span class="particle particle-5"></span>
+            <span class="particle particle-6"></span>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CURRENT TOPICS
+         ========================================================== -->
+    <section class="section" id="current-topics">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="Currently Learning"
+            data-i18n-hi="अभी सीख रहा हूँ">Currently Learning</h2>
+
+        <p class="section-lead reveal"
+           data-i18n-en="These are the topics I'm actively studying right now. Some are new, some are deeper dives into things I already know."
+           data-i18n-hi="ये वो topics हैं जो मैं अभी पढ़ रहा हूँ। कुछ नए हैं, कुछ पुराने topics की गहराई हैं।">
+          These are the topics I'm actively studying right now. Some are new,
+          some are deeper dives into things I already know.
+        </p>
+
+        <div class="skills-grid">
+
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="JavaScript Deep Dive"
+                data-i18n-hi="JavaScript गहराई से">
+              JavaScript Deep Dive
+            </h3>
+            <p data-i18n-en="Going beyond the basics — closures, async/await, the DOM, and building real interactive projects."
+               data-i18n-hi="बेसिक्स से आगे — closures, async/await, DOM, और असली interactive projects बनाना।">
+              Going beyond the basics — closures, async/await, the DOM, and
+              building real interactive projects.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="In Progress"
+                  data-i18n-hi="जारी है">In Progress</span>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="Responsive Web Design"
+                data-i18n-hi="Responsive Web Design">
+              Responsive Web Design
+            </h3>
+            <p data-i18n-en="Making websites work beautifully on every screen — mobile-first thinking, flexbox, grid, and fluid layouts."
+               data-i18n-hi="हर screen पर websites को बढ़िया चलाना — mobile-first सोच, flexbox, grid और fluid layouts।">
+              Making websites work beautifully on every screen — mobile-first
+              thinking, flexbox, grid, and fluid layouts.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="In Progress"
+                  data-i18n-hi="जारी है">In Progress</span>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="AI APIs &amp; Automation"
+                data-i18n-hi="AI APIs और Automation">
+              AI APIs &amp; Automation
+            </h3>
+            <p data-i18n-en="Using AI APIs to build smarter features. Learning how to automate simple tasks and workflows."
+               data-i18n-hi="AI APIs से smarter features बनाना। Simple tasks और workflows automate करना सीखना।">
+              Using AI APIs to build smarter features. Learning how to automate
+              simple tasks and workflows.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Exploring"
+                  data-i18n-hi="खोज रहा">Exploring</span>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="SEO &amp; Content Strategy"
+                data-i18n-hi="SEO और Content Strategy">
+              SEO &amp; Content Strategy
+            </h3>
+            <p data-i18n-en="Understanding how search works, what makes content rank, and how to write for both people and algorithms."
+               data-i18n-hi="Search कैसे काम करती है, content rank कैसे होता है, और लोगों और algorithms दोनों के लिए लिखना — ये समझना।">
+              Understanding how search works, what makes content rank, and how
+              to write for both people and algorithms.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Practicing"
+                  data-i18n-hi="अभ्यास कर रहा">Practicing</span>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="Business Fundamentals"
+                data-i18n-hi="Business के Fundamentals">
+              Business Fundamentals
+            </h3>
+            <p data-i18n-en="How businesses actually make money, keep customers, and grow. Reading real case studies, not just theory."
+               data-i18n-hi="Business असल में पैसे कैसे कमाते हैं, customers कैसे रखते हैं, और बढ़ते हैं। असली case studies पढ़ना, सिर्फ theory नहीं।">
+              How businesses actually make money, keep customers, and grow.
+              Reading real case studies, not just theory.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Learning"
+                  data-i18n-hi="सीख रहा">Learning</span>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3 data-i18n-en="Personal Branding"
+                data-i18n-hi="Personal Branding">
+              Personal Branding
+            </h3>
+            <p data-i18n-en="Learning how to communicate who I am, what I'm building, and why it matters — through this site and beyond."
+               data-i18n-hi="ये communicate करना कि मैं कौन हूँ, क्या बना रहा हूँ, और क्यों मायने रखता है — इस site के ज़रिए और आगे भी।">
+              Learning how to communicate who I am, what I'm building, and why
+              it matters — through this site and beyond.
+            </p>
+            <span class="skill-level"
+                  data-i18n-en="Developing"
+                  data-i18n-hi="विकसित हो रहा">Developing</span>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         LEARNING ROADMAP
+         ========================================================== -->
+    <section class="section section-alt" id="roadmap">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="My Learning Roadmap"
+            data-i18n-hi="मेरा Learning Roadmap">My Learning Roadmap</h2>
+
+        <p class="section-lead reveal"
+           data-i18n-en="Where I'm headed next — one step at a time."
+           data-i18n-hi="आगे कहाँ जा रहा हूँ — एक कदम एक बार।">
+          Where I'm headed next — one step at a time.
+        </p>
+
+        <div class="roadmap reveal">
+
+          <div class="roadmap-step">
+            <div class="roadmap-marker">01</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="JavaScript Foundations"
+                  data-i18n-hi="JavaScript Foundations">
+                JavaScript Foundations
+              </h3>
+              <p data-i18n-en="Mastering the core language — variables, functions, objects, arrays, and the DOM."
+                 data-i18n-hi="Core language में महारत — variables, functions, objects, arrays और DOM।">
+                Mastering the core language — variables, functions, objects,
+                arrays, and the DOM.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="In Progress"
+                    data-i18n-hi="जारी है">In Progress</span>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="roadmap-marker">02</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="Real Projects"
+                  data-i18n-hi="असली Projects">Real Projects</h3>
+              <p data-i18n-en="Building small, useful things end-to-end — from idea to deployed website."
+                 data-i18n-hi="छोटी, उपयोगी चीज़ें end-to-end बनाना — idea से deployed website तक।">
+                Building small, useful things end-to-end — from idea to
+                deployed website.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="In Progress"
+                    data-i18n-hi="जारी है">In Progress</span>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="roadmap-marker">03</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="AI Integration"
+                  data-i18n-hi="AI Integration">AI Integration</h3>
+              <p data-i18n-en="Using AI APIs to add smart features to websites and automate workflows."
+                 data-i18n-hi="AI APIs से websites में smart features जोड़ना और workflows automate करना।">
+                Using AI APIs to add smart features to websites and automate
+                workflows.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="Next"
+                    data-i18n-hi="अगला">Next</span>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="roadmap-marker">04</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="Backend Basics"
+                  data-i18n-hi="Backend Basics">Backend Basics</h3>
+              <p data-i18n-en="Understanding servers, databases, and APIs — so I can build full products, not just frontends."
+                 data-i18n-hi="Servers, databases और APIs समझना — ताकि मैं पूरे products बना सकूँ, सिर्फ frontend नहीं।">
+                Understanding servers, databases, and APIs — so I can build
+                full products, not just frontends.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="Planned"
+                    data-i18n-hi="योजना में">Planned</span>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="roadmap-marker">05</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="Business &amp; Marketing"
+                  data-i18n-hi="Business और Marketing">
+                Business &amp; Marketing
+              </h3>
+              <p data-i18n-en="Continuing to learn how real businesses grow — through D.G. EXPART and beyond."
+                 data-i18n-hi="असली businesses कैसे बढ़ते हैं, ये सीखते रहना — D.G. EXPART और आगे से।">
+                Continuing to learn how real businesses grow — through D.G.
+                EXPART and beyond.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="Ongoing"
+                    data-i18n-hi="चालू">Ongoing</span>
+            </div>
+          </div>
+
+          <div class="roadmap-step roadmap-step-future">
+            <div class="roadmap-marker">06</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="Something Bigger"
+                  data-i18n-hi="कुछ बड़ा">Something Bigger</h3>
+              <p data-i18n-en="A product I haven't fully imagined yet — but I'm building the skills to make it real."
+                 data-i18n-hi="एक product जिसकी मैंने पूरी कल्पना नहीं की — लेकिन मैं उसे असली बनाने की skills बना रहा हूँ।">
+                A product I haven't fully imagined yet — but I'm building the
+                skills to make it real.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="Future"
+                    data-i18n-hi="भविष्य">Future</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         HOW I LEARN
+         ========================================================== -->
+    <section class="section" id="how-i-learn">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="How I Learn"
+            data-i18n-hi="मैं कैसे सीखता हूँ">How I Learn</h2>
+
+        <div class="mindset-grid reveal">
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Build, don't just watch"
+                data-i18n-hi="बनाओ, सिर्फ देखो मत">Build, don't just watch</h3>
+            <p data-i18n-en="Tutorials are starting points. I learn best when I try to build something real and break it."
+               data-i18n-hi="Tutorials शुरुआत हैं। मैं तब सबसे बेहतर सीखता हूँ जब कुछ असली बनाने और तोड़ने की कोशिश करता हूँ।">
+              Tutorials are starting points. I learn best when I try to build
+              something real and break it.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Document the process"
+                data-i18n-hi="Process document करो">Document the process</h3>
+            <p data-i18n-en="Writing things down helps me understand them. This website is part of that practice."
+               data-i18n-hi="लिखना समझने में मदद करता है। ये website उसी अभ्यास का हिस्सा है।">
+              Writing things down helps me understand them. This website is
+              part of that practice.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Ask better questions"
+                data-i18n-hi="बेहतर सवाल पूछो">Ask better questions</h3>
+            <p data-i18n-en="The quality of my questions determines the quality of my learning. I'm working on that."
+               data-i18n-hi="मेरे सवालों की quality मेरी learning की quality तय करती है। मैं उस पर काम कर रहा हूँ।">
+              The quality of my questions determines the quality of my
+              learning. I'm working on that.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Stay consistent"
+                data-i18n-hi="Consistent रहो">Stay consistent</h3>
+            <p data-i18n-en="Small daily progress beats occasional bursts. Showing up matters more than being perfect."
+               data-i18n-hi="रोज़ की छोटी प्रगति कभी-कभार की बड़ी प्रगति से बेहतर है। Perfect होने से ज़्यादा रोज़ आना मायने रखता है।">
+              Small daily progress beats occasional bursts. Showing up matters
+              more than being perfect.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Use real projects"
+                data-i18n-hi="असली projects use करो">Use real projects</h3>
+            <p data-i18n-en="I learn fastest when there's a real goal — a website, a client need, a problem to solve."
+               data-i18n-hi="मैं सबसे तेज़ तब सीखता हूँ जब कोई असली लक्ष्य हो — एक website, एक client की ज़रूरत, एक problem solve करना।">
+              I learn fastest when there's a real goal — a website, a client
+              need, a problem to solve.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Teach to understand"
+                data-i18n-hi="समझने के लिए सिखाओ">Teach to understand</h3>
+            <p data-i18n-en="If I can explain it simply, I actually know it. Writing and sharing forces clarity."
+               data-i18n-hi="अगर मैं आसानी से समझा सकता हूँ, तो मैं सच में जानता हूँ। लिखना और साझा करना clarity लाता है।">
+              If I can explain it simply, I actually know it. Writing and
+              sharing forces clarity.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CLOSING CTA
+         ========================================================== -->
+    <section class="section section-alt closing" id="closing">
+      <div class="container">
+
+        <p class="closing-line reveal"
+           data-i18n-en="Learning is not a phase. It's the way I build."
+           data-i18n-hi="सीखना एक phase नहीं है। ये मेरा तरीका है बनाने का।">
+          Learning is not a phase.<br>
+          It's the way I build.
+        </p>
+
+        <div class="center-cta reveal">
+          <a href="project.html" class="btn btn-primary"
+             data-i18n="nav.projects">Projects</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Daksh Kumar · Meerut, India</p>
+      <p class="footer-note"
+         data-i18n-en="I am still building. My story is not finished yet."
+         data-i18n-hi="मैं अभी भी बना रहा हूँ। मेरी कहानी अभी खत्म नहीं हुई।">
+        I am still building. My story is not finished yet.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>My Journey · Daksh Kumar</title>
+  <meta name="description" content="The journey timeline and personal notes of Daksh Kumar — milestones, current focus, and what's next.">
+  <meta name="author" content="Daksh Kumar">
+  <meta name="theme-color" content="#07090d">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="My Journey · Daksh Kumar">
+  <meta property="og:description" content="Milestones, current focus, and where I'm headed next.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="me.jpeg">
+  <meta property="og:url" content="https://dakshkumar.example/journey.html">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="My Journey · Daksh Kumar">
+  <meta name="twitter:description" content="Milestones, current focus, and where I'm headed next.">
+  <meta name="twitter:image" content="me.jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%2300e0ff'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <header class="nav-header" id="navbar">
+    <div class="nav-container">
+      <a href="home.html" class="nav-logo" aria-label="Daksh Kumar — Home">DK</a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="home.html" class="nav-link" data-i18n="nav.home">Home</a>
+        <a href="about.html" class="nav-link" data-i18n="nav.about">About</a>
+        <a href="skill.html" class="nav-link" data-i18n="nav.skills">Skills</a>
+        <a href="learning.html" class="nav-link" data-i18n="nav.learning">Learning</a>
+        <a href="project.html" class="nav-link" data-i18n="nav.projects">Projects</a>
+        <a href="journey.html" class="nav-link active" data-i18n="nav.journey">Journey</a>
+        <a href="contact.html" class="nav-link nav-cta" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav-controls">
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+          <button class="lang-btn" data-lang="hi" aria-label="हिन्दी">हि</button>
+        </div>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch theme">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       MAIN
+       ============================================================ -->
+  <main>
+
+    <!-- ==========================================================
+         PAGE HERO — 3D PATH VISUAL
+         ========================================================== -->
+    <section class="hero hero-page" id="journey-hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+
+      <div class="hero-content">
+
+        <div class="hero-text">
+          <p class="hero-greeting"
+             data-i18n-en="Chapter 05"
+             data-i18n-hi="अध्याय 05">Chapter 05</p>
+
+          <h1 class="hero-name">
+            <span class="name-line"
+                  data-i18n-en="MY"
+                  data-i18n-hi="मेरा">MY</span>
+            <span class="name-line"
+                  data-i18n-en="JOURNEY"
+                  data-i18n-hi="सफ़र">JOURNEY</span>
+          </h1>
+
+          <p class="hero-tagline"
+             data-i18n-en="Milestones, current focus, and where I'm headed next."
+             data-i18n-hi="माइलस्टोन्स, अभी का focus, और आगे कहाँ जा रहा हूँ।">
+            Milestones, current focus, and where I'm headed next.
+          </p>
+
+          <p class="hero-intro"
+             data-i18n-en="A running log of the path so far — starting from nothing, learning in public, and building toward something I can't fully see yet."
+             data-i18n-hi="अब तक के सफ़र का एक चलता log — शून्य से शुरुआत, सबके सामने सीखना, और उस चीज़ की तरफ बढ़ना जो अभी पूरी दिखती नहीं।">
+            A running log of the path so far — starting from nothing, learning
+            in public, and building toward something I can't fully see yet.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#timeline-section" class="btn btn-primary"
+               data-i18n="btn.seeTimeline">See Timeline</a>
+            <a href="#notes" class="btn btn-outline"
+               data-i18n="btn.readNotes">Read Notes</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="scene-3d" aria-hidden="true">
+
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+
+            <div class="glow glow-cyan"></div>
+            <div class="glow glow-blue"></div>
+
+            <div class="path-3d">
+              <div class="path-step step-1">
+                <span class="step-dot"></span>
+              </div>
+              <div class="path-step step-2">
+                <span class="step-dot"></span>
+              </div>
+              <div class="path-step step-3">
+                <span class="step-dot"></span>
+              </div>
+              <div class="path-step step-4">
+                <span class="step-dot"></span>
+              </div>
+              <div class="path-step step-5">
+                <span class="step-dot active"></span>
+              </div>
+              <div class="path-line"></div>
+            </div>
+
+            <span class="particle particle-1"></span>
+            <span class="particle particle-2"></span>
+            <span class="particle particle-3"></span>
+            <span class="particle particle-4"></span>
+            <span class="particle particle-5"></span>
+            <span class="particle particle-6"></span>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         TIMELINE
+         ========================================================== -->
+    <section class="section" id="timeline-section">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="The Timeline"
+            data-i18n-hi="टाइमलाइन">The Timeline</h2>
+
+        <p class="section-lead reveal"
+           data-i18n-en="Real milestones as they happened — no invented dates, no fake achievements. Use this as a living document that grows with the journey."
+           data-i18n-hi="असली milestones जैसे हुए — कोई बनाई हुई तारीखें नहीं, कोई नकली achievements नहीं। इसे एक जीवित document मानो जो सफ़र के साथ बढ़ता है।">
+          Real milestones as they happened — no invented dates, no fake
+          achievements. Use this as a living document that grows with the
+          journey.
+        </p>
+
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"
+                 data-i18n-en="The Beginning"
+                 data-i18n-hi="शुरुआत">The Beginning</div>
+            <div class="timeline-title"
+                 data-i18n-en="Started learning"
+                 data-i18n-hi="सीखना शुरू किया">Started learning</div>
+            <div class="timeline-desc"
+                 data-i18n-en="Opened my first code editor and wrote my first line of HTML. Confused, curious, and excited."
+                 data-i18n-hi="पहली बार code editor खोला और पहली HTML line लिखी। Confused, curious, और excited।">
+              Opened my first code editor and wrote my first line of HTML.
+              Confused, curious, and excited.
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"
+                 data-i18n-en="Present"
+                 data-i18n-hi="वर्तमान">Present</div>
+            <div class="timeline-title"
+                 data-i18n-en="Building &amp; learning daily"
+                 data-i18n-hi="रोज़ बना और सीख रहा हूँ">Building &amp; learning daily</div>
+            <div class="timeline-desc"
+                 data-i18n-en="Working on web projects, exploring AI tools, and running D.G. EXPART while studying."
+                 data-i18n-hi="Web projects पर काम, AI tools explore करना, और पढ़ाई के साथ D.G. EXPART चलाना।">
+              Working on web projects, exploring AI tools, and running
+              D.G. EXPART while studying.
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"
+                 data-i18n-en="Ongoing"
+                 data-i18n-hi="जारी">Ongoing</div>
+            <div class="timeline-title"
+                 data-i18n-en="Current projects"
+                 data-i18n-hi="अभी के projects">Current projects</div>
+            <div class="timeline-desc"
+                 data-i18n-en="Personal website, AI experiments, and client work through D.G. EXPART."
+                 data-i18n-hi="Personal website, AI experiments, और D.G. EXPART के ज़रिए client work।">
+              Personal website, AI experiments, and client work through
+              D.G. EXPART.
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"
+                 data-i18n-en="Next"
+                 data-i18n-hi="अगला">Next</div>
+            <div class="timeline-title"
+                 data-i18n-en="Skills to master"
+                 data-i18n-hi="जो skills master करनी हैं">Skills to master</div>
+            <div class="timeline-desc"
+                 data-i18n-en="JavaScript frameworks, AI integration, and business fundamentals."
+                 data-i18n-hi="JavaScript frameworks, AI integration, और business fundamentals।">
+              JavaScript frameworks, AI integration, and business fundamentals.
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date"
+                 data-i18n-en="Future"
+                 data-i18n-hi="भविष्य">Future</div>
+            <div class="timeline-title"
+                 data-i18n-en="What I hope to build"
+                 data-i18n-hi="जो बनाना चाहता हूँ">What I hope to build</div>
+            <div class="timeline-desc"
+                 data-i18n-en="Useful digital products and a business that creates real value."
+                 data-i18n-hi="उपयोगी digital products और एक business जो असली value बनाए।">
+              Useful digital products and a business that creates real value.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CURRENT FOCUS
+         ========================================================== -->
+    <section class="section section-alt" id="current-focus">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="Current Focus"
+            data-i18n-hi="अभी का Focus">Current Focus</h2>
+
+        <div class="mindset-grid reveal">
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Building consistently"
+                data-i18n-hi="लगातार बना रहा हूँ">Building consistently</h3>
+            <p data-i18n-en="Working on small things every day — code, content, projects, and the systems behind them."
+               data-i18n-hi="रोज़ छोटी-छोटी चीज़ों पर काम — code, content, projects, और उनके पीछे के systems।">
+              Working on small things every day — code, content, projects,
+              and the systems behind them.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Learning in public"
+                data-i18n-hi="सबके सामने सीख रहा हूँ">Learning in public</h3>
+            <p data-i18n-en="Documenting what I learn and sharing the process instead of waiting for a finished result."
+               data-i18n-hi="जो सीखता हूँ उसे document करना और process साझा करना, perfect नतीजे का इंतज़ार करने की बजाय।">
+              Documenting what I learn and sharing the process instead of
+              waiting for a finished result.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Improving the craft"
+                data-i18n-hi="Craft सुधार रहा हूँ">Improving the craft</h3>
+            <p data-i18n-en="Getting better at writing code, writing words, and thinking clearly about problems."
+               data-i18n-hi="Code लिखना, words लिखना, और problems के बारे में साफ़ सोचना — इनमें बेहतर हो रहा हूँ।">
+              Getting better at writing code, writing words, and thinking
+              clearly about problems.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Growing D.G. EXPART"
+                data-i18n-hi="D.G. EXPART बढ़ा रहा हूँ">Growing D.G. EXPART</h3>
+            <p data-i18n-en="Applying what I learn about marketing and business to real projects and clients."
+               data-i18n-hi="Marketing और business के बारे में जो सीखता हूँ, उसे असली projects और clients पर apply करना।">
+              Applying what I learn about marketing and business to real
+              projects and clients.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Staying healthy"
+                data-i18n-hi="Healthy रह रहा हूँ">Staying healthy</h3>
+            <p data-i18n-en="Long-term progress needs a body and mind that can handle the work. I'm learning that too."
+               data-i18n-hi="Long-term प्रगति के लिए ऐसा शरीर और दिमाग़ चाहिए जो काम संभाल सके। मैं वो भी सीख रहा हूँ।">
+              Long-term progress needs a body and mind that can handle the
+              work. I'm learning that too.
+            </p>
+          </div>
+
+          <div class="mindset-card">
+            <h3 data-i18n-en="Thinking bigger"
+                data-i18n-hi="बड़ा सोच रहा हूँ">Thinking bigger</h3>
+            <p data-i18n-en="Asking bigger questions about what I want to build, who it helps, and why it matters."
+               data-i18n-hi="बड़े सवाल पूछना — क्या बनाना है, किसकी मदद करेगा, और क्यों मायने रखता है।">
+              Asking bigger questions about what I want to build, who it helps,
+              and why it matters.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         PERSONAL NOTES
+         ========================================================== -->
+    <section class="section" id="notes">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="Personal Notes"
+            data-i18n-hi="Personal Notes">Personal Notes</h2>
+
+        <p class="notes-sub reveal"
+           data-i18n-en="Thoughts, lessons, and things I'm figuring out along the way."
+           data-i18n-hi="सफ़र में जो सोच, सबक और चीज़ें समझ रहा हूँ।">
+          Thoughts, lessons, and things I'm figuring out along the way.
+        </p>
+
+        <div class="notes-grid">
+
+          <article class="note-card reveal">
+            <span class="note-tag"
+                  data-i18n-en="Learning"
+                  data-i18n-hi="सीखना">Learning</span>
+            <h3 data-i18n-en="What building this site taught me"
+                data-i18n-hi="इस site को बनाने ने मुझे क्या सिखाया">
+              What building this site taught me
+            </h3>
+            <p data-i18n-en="I learned more from one broken layout than from ten tutorials. Building forces you to understand."
+               data-i18n-hi="एक टूटे layout ने मुझे दस tutorials से ज़्यादा सिखाया। बनाना समझने पर मजबूर करता है।">
+              I learned more from one broken layout than from ten tutorials.
+              Building forces you to understand.
+            </p>
+            <span class="note-draft"
+                  data-i18n-en="Sample draft — edit before publishing."
+                  data-i18n-hi="Sample draft — publish करने से पहले edit करें।">
+              Sample draft — edit before publishing.
+            </span>
+          </article>
+
+          <article class="note-card reveal">
+            <span class="note-tag"
+                  data-i18n-en="AI"
+                  data-i18n-hi="AI">AI</span>
+            <h3 data-i18n-en="How I'm using AI to learn faster"
+                data-i18n-hi="AI से जल्दी सीखने का मेरा तरीका">
+              How I'm using AI to learn faster
+            </h3>
+            <p data-i18n-en="AI doesn't replace learning — it accelerates it. Here's how I use it without becoming dependent."
+               data-i18n-hi="AI सीखने की जगह नहीं लेता — वो इसे तेज़ करता है। ये है मेरा तरीका इसे इस्तेमाल करने का, dependent हुए बिना।">
+              AI doesn't replace learning — it accelerates it. Here's how I use
+              it without becoming dependent.
+            </p>
+            <span class="note-draft"
+                  data-i18n-en="Sample draft — edit before publishing."
+                  data-i18n-hi="Sample draft — publish करने से पहले edit करें।">
+              Sample draft — edit before publishing.
+            </span>
+          </article>
+
+          <article class="note-card reveal">
+            <span class="note-tag"
+                  data-i18n-en="Entrepreneurship"
+                  data-i18n-hi="Entrepreneurship">Entrepreneurship</span>
+            <h3 data-i18n-en="Starting with nothing but curiosity"
+                data-i18n-hi="सिर्फ जिज्ञासा से शुरुआत">
+              Starting with nothing but curiosity
+            </h3>
+            <p data-i18n-en="You don't need funding to start. You need a problem, a laptop, and the willingness to look stupid."
+               data-i18n-hi="शुरू करने के लिए funding नहीं चाहिए। चाहिए एक problem, एक laptop, और बेवकूफ दिखने की तैयारी।">
+              You don't need funding to start. You need a problem, a laptop,
+              and the willingness to look stupid.
+            </p>
+            <span class="note-draft"
+                  data-i18n-en="Sample draft — edit before publishing."
+                  data-i18n-hi="Sample draft — publish करने से पहले edit करें।">
+              Sample draft — edit before publishing.
+            </span>
+          </article>
+
+          <article class="note-card reveal">
+            <span class="note-tag"
+                  data-i18n-en="Personal Growth"
+                  data-i18n-hi="Personal Growth">Personal Growth</span>
+            <h3 data-i18n-en="Consistency over intensity"
+                data-i18n-hi="Consistency, Intensity से बेहतर">
+              Consistency over intensity
+            </h3>
+            <p data-i18n-en="One hour every day beats ten hours once a week. I'm learning to show up, even when it's boring."
+               data-i18n-hi="रोज़ का एक घंटा हफ़्ते में दस घंटों से बेहतर है। मैं रोज़ आना सीख रहा हूँ, चाहे boring हो।">
+              One hour every day beats ten hours once a week. I'm learning to
+              show up, even when it's boring.
+            </p>
+            <span class="note-draft"
+                  data-i18n-en="Sample draft — edit before publishing."
+                  data-i18n-hi="Sample draft — publish करने से पहले edit करें।">
+              Sample draft — edit before publishing.
+            </span>
+          </article>
+
+        </div>
+
+        <p class="placeholder-note reveal" style="text-align:center; margin-top:32px;"
+           data-i18n-en="[ADD YOUR NOTES] — these are sample drafts. Edit or replace them with your own writing."
+           data-i18n-hi="[अपने Notes जोड़ें] — ये sample drafts हैं। अपनी लेखनी से edit करें या बदलें।">
+          [ADD YOUR NOTES] — these are sample drafts. Edit or replace them
+          with your own writing.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         WHAT'S NEXT
+         ========================================================== -->
+    <section class="section section-alt" id="whats-next">
+      <div class="container">
+
+        <h2 class="section-title reveal"
+            data-i18n-en="What's Next"
+            data-i18n-hi="आगे क्या">What's Next</h2>
+
+        <div class="roadmap reveal">
+
+          <div class="roadmap-step">
+            <div class="roadmap-marker">→</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="Deeper into JavaScript"
+                  data-i18n-hi="JavaScript में और गहराई">
+                Deeper into JavaScript
+              </h3>
+              <p data-i18n-en="Going beyond the basics — building real, interactive projects."
+                 data-i18n-hi="बेसिक्स से आगे — असली, interactive projects बनाना।">
+                Going beyond the basics — building real, interactive projects.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="Next 3 months"
+                    data-i18n-hi="अगले 3 महीने">Next 3 months</span>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="roadmap-marker">→</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="Launch a real product"
+                  data-i18n-hi="एक असली product launch करना">
+                Launch a real product
+              </h3>
+              <p data-i18n-en="Something small, useful, and actually shipped to real users."
+                 data-i18n-hi="कुछ छोटा, उपयोगी, और असली users तक पहुँचाया हुआ।">
+                Something small, useful, and actually shipped to real users.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="Next 6 months"
+                    data-i18n-hi="अगले 6 महीने">Next 6 months</span>
+            </div>
+          </div>
+
+          <div class="roadmap-step">
+            <div class="roadmap-marker">→</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="Grow D.G. EXPART"
+                  data-i18n-hi="D.G. EXPART बढ़ाना">
+                Grow D.G. EXPART
+              </h3>
+              <p data-i18n-en="Take on more meaningful work and learn from real client projects."
+                 data-i18n-hi="ज़्यादा meaningful काम लेना और असली client projects से सीखना।">
+                Take on more meaningful work and learn from real client
+                projects.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="Ongoing"
+                    data-i18n-hi="चालू">Ongoing</span>
+            </div>
+          </div>
+
+          <div class="roadmap-step roadmap-step-future">
+            <div class="roadmap-marker">?</div>
+            <div class="roadmap-content">
+              <h3 data-i18n-en="Something bigger"
+                  data-i18n-hi="कुछ बड़ा">Something bigger</h3>
+              <p data-i18n-en="A project I haven't fully imagined yet — but I'm building toward it."
+                 data-i18n-hi="एक project जिसकी मैंने पूरी कल्पना नहीं की — लेकिन उसकी तरफ बढ़ रहा हूँ।">
+                A project I haven't fully imagined yet — but I'm building
+                toward it.
+              </p>
+              <span class="roadmap-status"
+                    data-i18n-en="Future"
+                    data-i18n-hi="भविष्य">Future</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         CLOSING CTA
+         ========================================================== -->
+    <section class="section closing" id="closing">
+      <div class="container">
+
+        <p class="closing-line reveal"
+           data-i18n-en="The journey is the point. I'm still on page one."
+           data-i18n-hi="सफ़र ही असली बात है। मैं अभी पहले पन्ने पर हूँ।">
+          The journey is the point.<br>
+          I'm still on page one.
+        </p>
+
+        <div class="center-cta reveal">
+          <a href="contact.html" class="btn btn-primary"
+             data-i18n="btn.letsConnect">Let's Connect</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Daksh Kumar · Meerut, India</p>
+      <p class="footer-note"
+         data-i18n-en="I am still building. My story is not finished yet."
+         data-i18n-hi="मैं अभी भी बना रहा हूँ। मेरी कहानी अभी खत्म नहीं हुई।">
+        I am still building. My story is not finished yet.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
